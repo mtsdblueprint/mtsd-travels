@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MTSD Travels | Safe Journeys. Explore Paradise.</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" href="Images/logo.png">
+
+    <style>
+        /* Navbar එකේ ලෝගෝ එකට අදාළ විශේෂ CSS (මෙහි ඇතුළත් කිරීමෙන් වඩාත් නිවැරදිව පෙනේ) */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            height: 60px;
+            /* ලෝගෝ එකේ උස */
+            text-decoration: none;
+        }
+
+        .nav-logo-img {
+            height: 100%;
+            width: auto;
+            border-radius: 8px;
+            /* මඳක් වටකුරු කිරීමට */
+            transition: transform 0.3s ease;
+        }
+
+        .nav-logo-img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <nav class="container">
+            <div class="logo">MTSD<span>.</span>Travels</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#places">Places</a></li>
+                <li><a href="#hotels">Hotels</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <button id="theme-btn" onclick="toggleTheme()">🌙</button>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-video-container">
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="Images/v1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Discover Paradise with MTSD</h1>
+            <p>Safe Journeys. Unforgettable Memories. Explore Sri Lanka like never before.</p>
+            <div class="hero-btns">
+                <a href="#hotels" class="btn-primary">Book Your Stay</a>
+                <a href="#places" class="btn-outline">Explore Places</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container section">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <div class="underline"></div>
+                <p>MTSD Travels is a premier travel service provider in Sri Lanka, backed by years of excellence and a
+                    deep passion for hospitality. We create life-changing experiences and memories that last a lifetime.
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="Images/about .jpg" alt="About MTSD Travels">
+            </div>
+        </div>
+    </section>
+
+    <section id="places" class="section places-section">
+        <div class="container text-center">
+            <h2 class="section-title">Explore Paradise</h2>
+            <p class="section-subtitle">Discover the most iconic destinations in Sri Lanka</p>
+            <div class="underline mx-auto"></div>
+
+            <div class="places-grid">
+                <a href="https://www.google.com/maps/search/Sigiriya+Fortress" target="_blank" class="place-link">
+                    <div class="place-card">
+                        <div class="place-img">
+                            <img src="Images/sigiriya.jpeg" alt="Sigiriya">
+                            <div class="place-overlay">
+                                <h3>Sigiriya Fortress</h3>
+                                <p>The 8th Wonder of the World</p>
+                                <span class="btn-mini">View on Map</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/Nine+Arch+Bridge+Ella" target="_blank" class="place-link">
+                    <div class="place-card">
+                        <div class="place-img">
+                            <img src="Images/Ella.webp" alt="Ella">
+                            <div class="place-overlay">
+                                <h3>Nine Arch Bridge</h3>
+                                <p>Scenic Beauty in the Highlands</p>
+                                <span class="btn-mini">View on Map</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/Mirissa+Beach" target="_blank" class="place-link">
+                    <div class="place-card">
+                        <div class="place-img">
+                            <img src="Images/Mirissa.jpg" alt="Mirissa">
+                            <div class="place-overlay">
+                                <h3>Mirissa Beach</h3>
+                                <p>Sun, Sand, and Whale Watching</p>
+                                <span class="btn-mini">View on Map</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/Dalada+Maligawa+Kandy" target="_blank" class="place-link">
+                    <div class="place-card">
+                        <div class="place-img">
+                            <img src="Images/Dalada Maligawa.jpg" alt="Kandy">
+                            <div class="place-overlay">
+                                <h3>Dalada Maligawa</h3>
+                                <p>The Sacred Heart of Culture</p>
+                                <span class="btn-mini">View on Map</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/Ambuluwawa+Tower" target="_blank" class="place-link">
+                    <div class="place-card">
+                        <div class="place-img">
+                            <img src="Images/ambuluwawa.webp" alt="Ambuluwawa Tower">
+                            <div class="place-overlay">
+                                <h3>Ambuluwawa Tower</h3>
+                                <p>Breathtaking Views & Biodiversity</p>
+                                <span class="btn-mini">View on Map</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/Ruwanwelisaya+Anuradhapura" target="_blank"
+                    class="place-link">
+                    <div class="place-card">
+                        <div class="place-img">
+                            <img src="Images/ruwan wali seya.jpg" alt="Ruwanwelisaya">
+                            <div class="place-overlay">
+                                <h3>Ruwanwelisaya</h3>
+                                <p>A Symbol of Infinite Serenity</p>
+                                <span class="btn-mini">View on Map</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="hotels" class="section hotels-section">
+        <div class="container text-center">
+            <h2 class="section-title">Luxury Stays</h2>
+            <p class="section-subtitle">Handpicked premium hotels for your comfort and style</p>
+            <div class="underline mx-auto"></div>
+
+            <div class="hotel-grid">
+                <div class="hotel-card">
+                    <div class="hotel-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800"
+                            alt="The Blue Marine">
+                        <div class="price-tag">$150 / Night</div>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="stars">★★★★★</div>
+                        <h3>The Blue Marine</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> Mirissa, Sri Lanka</p>
+                        <button class="btn-book">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="hotel-card">
+                    <div class="hotel-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=800"
+                            alt="Mountain Breeze">
+                        <div class="price-tag">$120 / Night</div>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="stars">★★★★☆</div>
+                        <h3>Mountain Breeze</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> Ella, Sri Lanka</p>
+                        <button class="btn-book">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="hotel-card">
+                    <div class="hotel-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=800"
+                            alt="Heritage Grand">
+                        <div class="price-tag">$200 / Night</div>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="stars">★★★★★</div>
+                        <h3>Heritage Grand</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> Kandy, Sri Lanka</p>
+                        <button class="btn-book">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="hotel-card">
+                    <div class="hotel-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?q=80&w=800"
+                            alt="Rock View Resort">
+                        <div class="price-tag">$180 / Night</div>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="stars">★★★★☆</div>
+                        <h3>Rock View Resort</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> Sigiriya, Sri Lanka</p>
+                        <button class="btn-book">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="hotel-card">
+                    <div class="hotel-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=800"
+                            alt="Ocean Villa">
+                        <div class="price-tag">$250 / Night</div>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="stars">★★★★★</div>
+                        <h3>Ocean Villa Galle</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> Galle, Sri Lanka</p>
+                        <button class="btn-book">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="hotel-card">
+                    <div class="hotel-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=800"
+                            alt="The Grand Galle">
+                        <div class="price-tag">$220 / Night</div>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="stars">★★★★★</div>
+                        <h3>The Grand Galle</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> Fort, Galle</p>
+                        <button class="btn-book">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section section">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 style="color: white;">Get In Touch</h2>
+                <p style="color: #cbd5e1;">Let's plan your dream vacation together.</p>
+                <div class="underline mx-auto"></div>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="details">
+                            <h4>Location</h4>
+                            <p>Beliatta, Southern Province, Sri Lanka</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="details">
+                            <h4>Phone</h4>
+                            <p>+94 7X XXX XXXX</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="details">
+                            <h4>Email</h4>
+                            <p>info@mtsdsolutions.com</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-icon fb"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon ig"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon wa"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon yt"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="social-icon tt"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="modern-form">
+                        <div class="form-row">
+                            <div class="input-data">
+                                <input type="text" required>
+                                <div class="underline-animation"></div>
+                                <label>First Name</label>
+                            </div>
+                            <div class="input-data">
+                                <input type="text" required>
+                                <div class="underline-animation"></div>
+                                <label>Last Name</label>
+                            </div>
+                        </div>
+                        <div class="input-data" style="margin-bottom: 30px;">
+                            <input type="email" required>
+                            <div class="underline-animation"></div>
+                            <label>Email Address</label>
+                        </div>
+                        <div class="input-data textarea">
+                            <textarea rows="4" required></textarea>
+                            <div class="underline-animation"></div>
+                            <label>How can we help you?</label>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            const btn = document.getElementById('theme-btn');
+            const isDark = document.body.classList.contains('dark-mode');
+            btn.innerText = isDark ? "☀️" : "🌙";
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        }
+
+        window.onload = () => {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-mode');
+                document.getElementById('theme-btn').innerText = "☀️";
+            }
+        };
+    </script>
+</body>
+
+</html>
